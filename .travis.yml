@@ -4,3 +4,14 @@ python:
 install:
   - pip install -r requirements.txt
 scripts: echo foo
+
+deploy:
+  provider: elasticbeanstalk
+  access_key_id:
+    secure:"AKIA6MVO7QGZDPCXZ4OT"
+  secret_access_key:
+    secure: "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"
+  region: "us-west-2"
+  app: "django-tutorial3"
+  env: "django-env3"
+  bucket_name: "elasticbeanstalk-us-west-2-989283189170"
