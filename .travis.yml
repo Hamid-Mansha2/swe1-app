@@ -3,6 +3,7 @@ python:
   - "3.7"
 install:
   - pip install -r requirements.txt
+  - pip install coveralls
 scripts: echo foo
 
 deploy:
@@ -15,3 +16,6 @@ deploy:
   app: "django-tutorial3"
   env: "django-env3"
   bucket_name: "elasticbeanstalk-us-west-2-989283189170"
+
+after_success:
+  coveralls
