@@ -6,7 +6,7 @@ install:
   - pip install coveralls
 scripts:
   - echo foo
-  - coverage run manage.py test -v 2 && coverage report
+  - coverage run manage.py test
 after_success:
   coveralls
 
