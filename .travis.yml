@@ -13,8 +13,6 @@ scripts:
   - coverage run manage.py test
 after_success:
   - coveralls
-
-
 deploy:
   provider: elasticbeanstalk
   access_key_id:
@@ -24,6 +22,4 @@ deploy:
   region: "us-west-2"
   app: "django-tutorial3"
   env: "django-env3"
-  on:
-    branch: main
   bucket_name: "elasticbeanstalk-us-west-2-989283189170"
