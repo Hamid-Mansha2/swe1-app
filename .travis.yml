@@ -12,11 +12,6 @@ scripts:
   - coverage run manage.py test
 after_success:
   - coveralls
-language: ruby
-rvm:
-  - 2.5
-install: skip
-script: ruby -v
 deploy:
   provider: elasticbeanstalk
   access_key_id:
