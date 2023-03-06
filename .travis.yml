@@ -3,6 +3,7 @@ python:
   - "3.7"
 install:
   - pip install -r requirements.txt
+  - pip install pyyaml
   - pip install coveralls
 scripts:
   - echo foo
@@ -13,9 +14,9 @@ after_success:
 deploy:
   provider: elasticbeanstalk
   access_key_id:
-    secure:"AKIA6MVO7QGZDPCXZ4OT"
+    secure:${AWS_KEY_ID}
   secret_access_key:
-    secure: "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"
+    secure: ${AWS_SECRET_KEY}
   region: "us-west-2"
   app: "django-tutorial3"
   env: "django-env3"
