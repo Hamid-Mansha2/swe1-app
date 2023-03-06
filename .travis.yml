@@ -16,7 +16,7 @@ after_success:
 
 deploy:
   provider: elasticbeanstalk
-  access_key_id: $AWSKEYID
+  access_key_id: $AWS_KEYID
   secret_access_key: $AWSSECRETKEY
   region: "us-west-2"
   app: "django-tutorial3"
