@@ -4,8 +4,7 @@ python:
 install:
   - pip install -r requirements.txt
   - pip install black
-  - python3.7 -m pip install flake8
-  - pip install pyyaml
+  - pip install flake8
   - pip install coveralls
 scripts:
   - black .
