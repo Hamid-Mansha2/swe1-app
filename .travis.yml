@@ -23,3 +23,5 @@ deploy:
   env: "django-env3"
   bucket_name: "elasticbeanstalk-us-west-2-989283189170"
   skip_cleanup: true
+  on:
+    branch: main
