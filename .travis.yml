@@ -8,7 +8,7 @@ scripts:
   - echo foo
   - coverage run manage.py test
 after_success:
-  coveralls
+  - coveralls
 
 deploy:
   provider: elasticbeanstalk
