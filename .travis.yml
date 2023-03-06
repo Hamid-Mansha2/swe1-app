@@ -25,5 +25,5 @@ deploy:
   app: "django-tutorial3"
   env: "django-env3"
   on:
-    all_branches: master
+    branch: master
   bucket_name: "elasticbeanstalk-us-west-2-989283189170"
