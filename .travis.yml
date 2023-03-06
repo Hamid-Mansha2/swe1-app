@@ -14,10 +14,7 @@ scripts:
 after_success:
   - coveralls
 
-before_deploy:
-  - if [ "$TRAVIS_BRANCH" == "main" ];then
-    git checkout main;
-    fi;
+
 deploy:
   provider: elasticbeanstalk
   access_key_id:
@@ -28,5 +25,5 @@ deploy:
   app: "django-tutorial3"
   env: "django-env3"
   on:
-    all_branches: true
+    all_branches: master
   bucket_name: "elasticbeanstalk-us-west-2-989283189170"
