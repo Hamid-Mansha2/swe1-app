@@ -14,8 +14,8 @@ after_success:
   - coveralls
 deploy:
   provider: elasticbeanstalk
-  access_key_id: $AWS_KEYID
-  secret_access_key: $AWS_SECRETKEY
+  access_key_id: "$AWS_KEYID"
+  secret_access_key: "$AWS_SECRETKEY"
   region: "us-west-2"
   app: "django-tutorial3"
   env: "django-env3"
